@@ -16,7 +16,7 @@ class GraphBfs:
             (has_found_child, has_found_path) = self.chileMethod(goal)
 
             if has_found_path:
-                return self.getresultPath(start, goal)
+                return self.getResultPath(start, goal)
 
             if len(self.opened) != 0:
                 self.closed.append(self.opened.pop(0))
@@ -52,7 +52,7 @@ class GraphBfs:
 
         return (has_found_child, False)
 
-    def getresultPath(self, start, goal):
+    def getResultPath(self, start, goal):
         current = goal
 
         result = [current]

@@ -1,6 +1,3 @@
-from edge import Edge
-
-
 class GraphDfs:
     def __init__(self, edges):
         self.edges = edges
